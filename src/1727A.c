@@ -4,7 +4,7 @@
  *  Created on: Jan 29, 2016
  *      Author: Anton
  */
-#include "1727B.h"
+#include "1727A.h"
 
 
 void flywheelInit(flywheel aFlywheel,int (*input)(),

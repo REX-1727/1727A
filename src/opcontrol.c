@@ -33,7 +33,7 @@
  */
 
 #include "main.h"
-#include "1727B.h"
+#include "1727A.h"
 
 /*
  * Runs the user operator control code. This function will be started in its own task with the

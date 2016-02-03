@@ -5,8 +5,8 @@
  *      Author: Anton
  */
 
-#ifndef _1727B_H_
-#define _1727B_H_
+#ifndef _1727A_H_
+#define _1727A_H_
 
 #include <API.h>
 #include "rexAPI.h"
