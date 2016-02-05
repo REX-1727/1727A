@@ -12,12 +12,14 @@
 #include "rexAPI.h"
 #include "math.h"
 
-#define R				3
-#define L				8
-#define LOWER_INTAKE	7
-#define UPPER_INTAKE	4
-#define LIFT			5
-#define LIFT_2			6
+#define R1		1
+#define R2		8
+#define R3		4
+#define L1		2
+#define L2		10
+#define L3		5
+#define INTAKE	3
+#define LOCK	7
 
 
 #define FLYWHEEL_CIRCUMFERENCE (5*3.1415926535)

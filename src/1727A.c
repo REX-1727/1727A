@@ -121,36 +121,37 @@ void driveControl(void *params)
 {
 	while(true)
 	{
-		motorSet(R,-main.rightVertical.axisValue);
-		motorSet(L,main.leftVertical.axisValue);
+		motorSet(R1,main.rightVertical.axisValue);
+		motorSet(L1,main.leftVertical.axisValue);
+		motorSet(R2,main.rightVertical.axisValue);
+		motorSet(L2,-main.leftVertical.axisValue);
+		motorSet(R3,main.rightVertical.axisValue);
+		motorSet(L3,main.leftVertical.axisValue);
 
 		if(partner.rightBumper.axisValue == JOY_UP)
 		{
-			motorSet(LOWER_INTAKE, 127);
+			motorSet(INTAKE, 127);
 		}
 		else if(partner.rightBumper.axisValue == JOY_DOWN)
 		{
-			motorSet(LOWER_INTAKE, -127);
+			motorSet(INTAKE, -127);
 		}
 		else
 		{
-			motorSet(LOWER_INTAKE, 0);
+			motorSet(INTAKE, 0);
 		}
 		if(partner.leftBumper.axisValue == JOY_UP)
 		{
-			motorSet(UPPER_INTAKE, -127);
+			motorSet(LOCK, -127);
 		}
 		else if(partner.leftBumper.axisValue == JOY_DOWN)
 		{
-			motorSet(UPPER_INTAKE, 127);
+			motorSet(LOCK, 127);
 		}
 		else
 		{
-			motorSet(UPPER_INTAKE, 0);
+			motorSet(LOCK, 0);
 		}
-		motorSet(LIFT, partner.rightVertical.axisValue);
-		motorSet(LIFT_2, partner.rightVertical.axisValue);
-
 
 		taskDelay(20);
 	}

@@ -59,8 +59,8 @@ void initializeIO() {
  * will not start. An autonomous mode selection menu like the pre_auton() in other environments
  * can be implemented in this task if desired.
  */
-int leftOutputs[4] = {2, 9, 0, 0};
-int rightOutputs[4] = {1, 10, 0, 0};
+int leftOutputs[4] = {6, 0, 0, 0};
+int rightOutputs[4] = {9, 0, 0, 0};
 
 
 
@@ -71,8 +71,8 @@ void initialize() {
 	leftFlywheelEncoder = encoderInit(1,2,false);
 	rightFlywheelEncoder = encoderInit(3,4,false);
 
-	pidParams left = {NULL,getLVel,getLPower,-1,.005,0,.12,{-2,-9,0,0}};
-	pidParams right ={NULL,getRVel,getRPower,-1,.005,0,.12,{-1,-10,0,0}};
+	pidParams left = {NULL,getLVel,getLPower,-1,.005,0,.12,{6,0,0,0}};
+	pidParams right ={NULL,getRVel,getRPower,-1,.005,0,.12,{9,0,0,0}};
 
 	lcdInit(uart1);
 

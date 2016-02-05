@@ -60,8 +60,8 @@ void autonomous() {
 	rightFlywheel.variables.powerRaw = ((rightFlywheel.variables.power)/3.0)*(12/FLYWHEEL_CIRCUMFERENCE)*360;
 	leftFlywheel.variables.powerRaw = ((leftFlywheel.variables.power)/3.0)*(12/FLYWHEEL_CIRCUMFERENCE)*360;
 	delay(5000);
-	motorSet(LOWER_INTAKE,127);
-	motorSet(UPPER_INTAKE,-127);
+	motorSet(INTAKE,127);
+	motorSet(INTAKE,-127);
 	delay(8000);
 	taskSuspend(velocity_task);
 	taskSuspend(leftFlywheel_task);
